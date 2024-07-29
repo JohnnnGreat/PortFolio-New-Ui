@@ -60,7 +60,7 @@
         display: flex;
         align-items: center;
         margin: 20px 0;
-
+        gap: 1rem;
         @media (max-width: 567px) {
           flex-direction: column;
         }
@@ -118,6 +118,69 @@
             font-weight: bolder;
           }
         }
+      }
+    }
+  }
+}
+
+// Project Card Stylinh
+.project-card {
+  position: fixed;
+  height: auto;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  background-color: #171717c2;
+  backdrop-filter: blur(10px);
+  z-index: 23;
+  padding: 2rem;
+  .close-card {
+    font-family: "Syne", sans-serif;
+    color: #b5b5b5;
+    position: absolute;
+    right: 3rem;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  hr {
+    color: red;
+  }
+
+  .project-wrapper {
+    padding-top: 4rem;
+    max-width: 900px;
+    margin: auto;
+
+    .project-technologies {
+      display: flex;
+      gap: 0.7rem;
+      margin-top: 1rem;
+
+      p {
+        padding: 0.6rem 1rem;
+        background-color: #ffffff21;
+        border-radius: 10px;
+      }
+    }
+
+    .project-content {
+      color: #fff;
+
+      h1,
+      a {
+        font-family: "Syne", sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+
+        @media (max-width: 567px) {
+          font-size: 24px;
+        }
+      }
+
+      p {
+        font-family: "Poppins", sans-serif;
+        color: #b5b5b5;
       }
     }
   }

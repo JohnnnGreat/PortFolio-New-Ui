@@ -116,3 +116,37 @@ export const projects = [
     reverse: false,
   },
 ];
+
+export const projectsInfoDetails = [
+  {
+    id: 1,
+    image: <Image className="project-image" src={Midwest} alt="midwest" />,
+    title: "Midwest Jack and Greens",
+    description: "A jamaican restaurant",
+    technologiesUsed: ["Nextjs", "Sass", "Nodemailer"],
+    designTheme: ["Light"],
+
+    href: "/",
+    reverse: false,
+  },
+  {
+    id: 2,
+    image: <Image className="project-image" src={Veronicas} alt="veronicas" />,
+    title: "Veronicas Kitchen",
+    description: "A Food Reservation  Website",
+    technologiesUsed: ["Nextjs", "Sass", "Nodemailer"],
+    designTheme: ["Light"],
+    href: "/",
+    reverse: true,
+  },
+  {
+    id: 3,
+    image: <Image className="project-image" src={ScholarHub} alt="scholarhub" />,
+    title: "Scholars Hub",
+    description: "A Research Delivery Website",
+    href: "/",
+    reverse: false,
+    technologiesUsed: ["Nextjs", "Sass", "Nodemailer"],
+    designTheme: ["Light"],
+  },
+];
