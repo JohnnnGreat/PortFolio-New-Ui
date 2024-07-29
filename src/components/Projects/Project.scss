@@ -1,0 +1,124 @@
+.projects {
+  overflow: hidden;
+  padding: 5rem 1rem;
+  position: relative;
+
+  @media (max-width: 567px) {
+    padding: 3rem 1rem;
+  }
+
+  &__wrapper {
+    max-width: 900px;
+    margin: auto;
+
+    .projects-header {
+      font-size: 36px;
+      color: #fff;
+      font-weight: 600;
+
+      @media (max-width: 567px) {
+        font-size: 24px;
+      }
+    }
+
+    .projects-desc {
+      color: #a7a4a4;
+      font-size: 1rem;
+      max-width: 500px;
+
+      @media (max-width: 567px) {
+        font-size: 0.9rem;
+      }
+    }
+
+    .projects-container {
+      .image-container {
+        position: relative;
+        width: auto;
+        .project-image {
+          width: 100%;
+          max-width: 500px;
+          height: auto;
+          position: relative;
+          border: 2px solid #565656;
+          border-radius: 10px;
+        }
+
+        .img-card {
+          width: 80%;
+          background-color: #d9d9d948;
+          height: 90%;
+          position: absolute;
+          top: 1rem;
+          right: -1rem;
+          z-index: -1;
+          border-radius: 10px;
+        }
+      }
+
+      .project {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+
+        @media (max-width: 567px) {
+          flex-direction: column;
+        }
+      }
+
+      .project.reverse {
+        flex-direction: row-reverse;
+
+        @media (max-width: 567px) {
+          flex-direction: column;
+        }
+      }
+
+      .project-content {
+        width: 50%;
+        padding: 20px;
+
+        @media (max-width: 567px) {
+          width: 100%;
+          padding: 10px;
+        }
+
+        h1 {
+          font-size: 30px;
+          color: #fff;
+          font-weight: 600;
+          font-family: "Syne", sans-serif;
+
+          @media (max-width: 567px) {
+            font-size: 24px;
+          }
+        }
+
+        p {
+          color: #a7a4a4;
+          font-weight: 500;
+          font-family: "Poppins", sans-serif;
+        }
+
+        button {
+          background-color: #8cf506;
+          font-family: "Syne", sans-serif;
+          padding: 0.7rem 1.6rem;
+          display: inline-block;
+          margin-top: 1.2rem;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 500;
+          gap: 1rem;
+
+          svg {
+            width: 18px;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+}

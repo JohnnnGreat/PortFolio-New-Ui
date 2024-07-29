@@ -20,6 +20,11 @@ import Supabase from "../public/logos/devicon_supabase.svg";
 import ShadcnUi from "../public/logos/simple-icons_shadcnui.svg";
 import Express from "../public/logos/skill-icons_expressjs-light.svg";
 
+// Projects Images
+import Veronicas from "../public/projectsImages/Veronicas.jpg";
+import Midwest from "../public/projectsImages/midwest.jpg";
+import ScholarHub from "../public/projectsImages/ScholarHub.jpg";
+
 export const socialMediaLinks = [
   {
     id: 1,
@@ -82,5 +87,32 @@ export const researchProcess = [
     title: "4. Periodic Maintenance & Update",
     notes:
       "Once deployed and delivered, I maintain periodic check on the website functions, to ensure every components are still running as they are meant to run. Updates on the other hand, are usually triggered by the client, most especially when there is call to an update on the content of website, of which I am always happy to do.",
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    image: <Image className="project-image" src={Midwest} alt="midwest" />,
+    title: "Midwest Jack and Greens",
+    description: "A jamaican restaurant",
+    href: "/",
+    reverse: false,
+  },
+  {
+    id: 2,
+    image: <Image className="project-image" src={Veronicas} alt="veronicas" />,
+    title: "Veronicas Kitchen",
+    description: "A Food Reservation  Website",
+    href: "/",
+    reverse: true,
+  },
+  {
+    id: 3,
+    image: <Image className="project-image" src={ScholarHub} alt="scholarhub" />,
+    title: "Scholars Hub",
+    description: "A Research Delivery Website",
+    href: "/",
+    reverse: false,
   },
 ];
