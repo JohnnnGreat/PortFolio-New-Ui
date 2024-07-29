@@ -1,0 +1,72 @@
+.work {
+  overflow: hidden;
+  padding: 5rem 1rem;
+  position: relative;
+  @media (max-width: 567px) {
+    padding: 3rem 1rem;
+  }
+  &__wrapper {
+    max-width: 700px;
+    margin: auto;
+
+    @media (max-width: 567px) {
+      max-width: 100%;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #fff;
+      font-weight: 600;
+      max-width: 400px;
+      line-height: 1;
+      @media (max-width: 567px) {
+        font-size: 24px;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+
+      input,
+      textarea {
+        width: 100%;
+        border: 2px solid #565656;
+        border-radius: 10px;
+        background: none;
+        outline: none;
+        padding: 0.9rem 0.9rem;
+        background-color: #ffffff0c;
+        color: #a7a4a4;
+        &::placeholder {
+          font-family: "Syne", sans-serif;
+          color: #a7a4a4;
+        }
+      }
+
+      button {
+        background: #8cf506;
+        padding: 0.9rem 0.9rem;
+        border-radius: 10px;
+        font-family: "Syne", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+      }
+    }
+  }
+}
+
+// Constants ----------------------------------------------------------------
+.work-blur-eff {
+  position: absolute;
+  z-index: -1;
+  height: 120%;
+  top: 0;
+  opacity: 0.6;
+}

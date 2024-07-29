@@ -2,7 +2,9 @@
   padding: 5rem 1rem;
   overflow: hidden;
   position: relative;
-
+  @media (max-width: 567px) {
+    padding: 3rem 1rem;
+  }
   &__wrapper {
     max-width: 900px;
     margin: auto;
@@ -27,7 +29,7 @@
       max-width: 500px;
 
       @media (max-width: 567px) {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
     }
 
@@ -56,8 +58,18 @@
           align-items: center;
           flex-direction: column;
           gap: 0.6rem;
+          transition: 300ms ease;
           img {
             width: 30px;
+          }
+
+          &:hover {
+            border: 2px solid #cececee5;
+            transition: 300ms ease;
+
+            p {
+              color: #cececee5;
+            }
           }
           @media (max-width: 567px) {
             height: 120px;
@@ -70,7 +82,7 @@
             font-size: 20px;
             font-weight: 500;
             color: #ffffff6b;
-
+            font-family: "Syne", sans-serif;
             @media (max-width: 567px) {
               font-size: 1rem;
             }
