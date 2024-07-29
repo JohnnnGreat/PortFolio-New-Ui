@@ -36,36 +36,38 @@
 
       .tech-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         max-width: 900px;
         margin: 0 auto;
         gap: 1rem;
 
         @media (max-width: 567px) {
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
+          max-width: 100% !important;
         }
         .tech-card {
-          width: 220px;
-          height: 176px;
+          width: 180px;
+          height: 130px;
           border-radius: 10px;
           background-color: #ffffff07;
-          border: 2px solid #565656;
+          border: 2px solid #a3a3a36c;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
           gap: 0.6rem;
-
+          img {
+            width: 30px;
+          }
           @media (max-width: 567px) {
-            width: 160px;
             height: 120px;
-
+            width: 100%;
             img {
-              width: 30px;
+              width: 20px;
             }
           }
           p {
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 500;
             color: #ffffff6b;
 
