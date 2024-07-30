@@ -30,27 +30,32 @@ import AppDesign from "../public/projectsImages/ImageOne.png";
 import Hom from "../public/projectsImages/hom.jpg";
 import Heritage from "../public/projectsImages/Heritage.png";
 import Macgroup from "../public/projectsImages/Macgroup.png";
+import FileStorage from "../public/projectsImages/FileStorage.jpg";
+import Ed from "../public/projectsImages/ed.jpg";
+import Marketing from "../public/projectsImages/marketing.jpg";
+import Culinary from "../public/projectsImages/culinary.jpg";
+import Saveo from "../public/projectsImages/Saveo.jpg";
 
 export const socialMediaLinks = [
   {
     id: 1,
     icon: <Image src={Facebook} alt="facebook" />,
-    link: "/",
+    link: "https://www.facebook.com/johnossomossai",
   },
   {
     id: 2,
     icon: <Image src={Github} alt="github" />,
-    link: "/",
+    link: "https://github.com/JohnnnGreat",
   },
   {
     id: 3,
     icon: <Image src={X} alt="x" />,
-    link: "/",
+    link: "https://twitter.com/OssaiJohnOJ?t=Dr1f15Fd0HG74ivK4uJbkQ&s=09",
   },
   {
     id: 4,
     icon: <Image src={In} alt="in" />,
-    link: "/",
+    link: "https://www.linkedin.com/in/john-ossai-65280b227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
 
@@ -133,6 +138,7 @@ export const projectsInfoDetails = [
     designTheme: ["Light"],
     href: "https://midwest-peach.vercel.app/",
     reverse: false,
+    sourceCodeHref: "https://github.com/JohnnnGreat/Midwest",
   },
   {
     id: 2,
@@ -143,6 +149,7 @@ export const projectsInfoDetails = [
     designTheme: ["Light"],
     href: "https://www.veronicas-kitchen.com/",
     reverse: true,
+    sourceCodeHref: "",
   },
   {
     id: 3,
@@ -153,7 +160,7 @@ export const projectsInfoDetails = [
     reverse: false,
     technologiesUsed: ["Nextjs", "TailwindCss", "Ant Design", "React Router"],
     designTheme: ["Dark"],
-    sourceCodeHref: "/",
+    sourceCodeHref: "https://github.com/JohnnnGreat/ScholarHub-MERN",
   },
   {
     id: 4,
@@ -162,9 +169,9 @@ export const projectsInfoDetails = [
     description: "A Portfolio Design and Development for A friend",
     href: "https://timgabrielcodes.vercel.app/",
     reverse: false,
-    technologiesUsed: ["Angular", "Tailwindcss"],
+    technologiesUsed: ["Next", "Tailwindcss"],
     designTheme: ["Light"],
-    sourceCodeHref: "/",
+    sourceCodeHref: "https://github.com/JohnnnGreat/TimPortfolio",
   },
   {
     id: 5,
@@ -179,7 +186,7 @@ export const projectsInfoDetails = [
   },
 
   {
-    id: 5,
+    id: 6,
     image: <Image className="project-image" src={Heritage} alt="heritage Hub" />,
     title: "Heritage Hub",
     description: "A Cuising Finder Website",
@@ -187,11 +194,11 @@ export const projectsInfoDetails = [
     reverse: false,
     technologiesUsed: ["Nextjs", "Sass", "Nodemailer", "MongoDb", "Express Js"],
     designTheme: ["Light"],
-    sourceCodeHref: "/",
+    sourceCodeHref: "https://github.com/JohnnnGreat/Traditional-Cuisines",
   },
 
   {
-    id: 3,
+    id: 7,
     image: <Image className="project-image" src={FitVibe} alt="scholarhub" />,
     title: "FitVibe Hub",
     description: "Landing Page for a fitness and health website",
@@ -199,41 +206,86 @@ export const projectsInfoDetails = [
     reverse: false,
     technologiesUsed: ["Nextjs", "Tailwindcss", "Nodemailer"],
     designTheme: ["Light"],
-    sourceCodeHref: "/",
+    sourceCodeHref: "https://github.com/JohnnnGreat/Fitness-and-Wellness",
   },
 
   {
-    id: 3,
-    image: <Image className="project-image" src={ScholarHub} alt="scholarhub" />,
+    id: 8,
+    image: <Image className="project-image" src={AppDesign} alt="Appdesign" />,
+    title: "Food Green",
+    description: "A Ui design for food delivery application",
+    href: "/",
+    reverse: false,
+    technologiesUsed: ["Figma", "CorelDraw"],
+    designTheme: ["Light"],
+    sourceCodeHref: "/",
+  },
+  {
+    id: 9,
+    image: <Image className="project-image" src={Hom} alt="House of Max" />,
+    title: "House of Max",
+    description: "An Ngo Website based in Nigeria",
+    href: "https://www.houseofmax.org/",
+    reverse: false,
+    technologiesUsed: ["Figma", "CorelDraw"],
+    designTheme: ["Light"],
+    sourceCodeHref: "https://github.com/JohnnnGreat/Maxwell-Bessie-Adiele-",
+  },
+  {
+    id: 10,
+    image: <Image className="project-image" src={FileStorage} alt="File Storage" />,
+    title: "File Storage",
+    description: "A File Storage Web Application that allow Sharing of files",
+    href: "https://media-storage-pi.vercel.app/",
+    reverse: false,
+    technologiesUsed: ["Next", "Shadcnui", "Supabase"],
+    designTheme: ["Light"],
+    sourceCodeHref: "https://github.com/JohnnnGreat/Media-Storage-Supabase-Next.Js",
+  },
+
+  {
+    id: 11,
+    image: <Image className="project-image" src={Ed} alt="ed circle" />,
+    title: "Ed Circle",
+    description: "Landing Page for a Educational Resource Website",
+    href: "https://edu-circle.netlify.app/",
+    reverse: false,
+    technologiesUsed: ["Html", "CSS", "Javascript"],
+    designTheme: ["Light"],
+    sourceCodeHref: "https://github.com/JohnnnGreat/Ed-Circle",
+  },
+
+  {
+    id: 12,
+    image: <Image className="project-image" src={Culinary} alt="scholarhub" />,
     title: "Culinary Finder with API",
     description: "A Culinary Finder with API",
     href: "https://food-finder-ecru.vercel.app/",
     reverse: false,
     technologiesUsed: ["Axios", "TailwindCss"],
     designTheme: ["Light"],
-    sourceCodeHref: "/",
+    sourceCodeHref: "https://github.com/JohnnnGreat/FoodFinder",
   },
-
   {
-    id: 3,
-    image: <Image className="project-image" src={AppDesign} alt="Appdesign" />,
-    title: "Food Green",
-    description: "A Ui design for food delivery application",
-    href: "",
+    id: 13,
+    image: <Image className="project-image" src={Marketing} alt="ed circle" />,
+    title: "Marketing Madness",
+    description: "Frontend for an AI Marketing Agency",
+    href: "https://marketing-madnes.vercel.app/",
+    reverse: false,
+    technologiesUsed: ["Html", "CSS", "Javascript"],
+    designTheme: ["Dark"],
+    sourceCodeHref: "https://github.com/JohnnnGreat/Marketing-Madnes",
+  },
+  {
+    id: 14,
+    image: <Image className="project-image" src={Saveo} alt="ed circle" />,
+    title: "Saveo",
+    description: "Dashboard Ui Design for a Savings Scheme",
+    href: "https://www.behance.net/gallery/196324953/SAVEO",
     reverse: false,
     technologiesUsed: ["Figma", "CorelDraw"],
     designTheme: ["Light"],
-    sourceCodeHref: "/",
-  },
-  {
-    id: 3,
-    image: <Image className="project-image" src={Hom} alt="House of Max" />,
-    title: "House of Max",
-    description: "",
-    href: "https://www.houseofmax.org/",
-    reverse: false,
-    technologiesUsed: ["Figma", "CorelDraw"],
-    designTheme: ["Light"],
-    sourceCodeHref: "/",
+    sourceCodeHref: "https://www.behance.net/gallery/196324953/SAVEO",
   },
 ];

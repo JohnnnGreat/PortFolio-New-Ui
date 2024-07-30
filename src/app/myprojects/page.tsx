@@ -91,7 +91,7 @@ const MyProjects = () => {
           </div>
           <div className="project-wrapper">
             <div className="project-content">
-              <Link className="flex items-center gap-[.8rem]" href={data[0].href}>
+              <Link className="flex items-center gap-[.8rem]" target="_blank" href={data[0].href}>
                 View Live Project{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +113,11 @@ const MyProjects = () => {
           </div>
           <div className="project-wrapper">
             <div className="project-content">
-              <Link className="flex items-center gap-[.8rem]" href={data[0].href}>
+              <Link
+                className="flex items-center gap-[.8rem]"
+                target="_blank"
+                href={data[0].sourceCodeHref}
+              >
                 View Source Code
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

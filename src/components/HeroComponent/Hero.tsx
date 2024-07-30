@@ -15,7 +15,7 @@ const Hero = () => {
         <header className="main__header">
           <div className="social-media">
             {socialMediaLinks.map((socialMedia) => (
-              <Link href={socialMedia.link} key={socialMedia.id}>
+              <Link href={socialMedia.link} target="_blank" key={socialMedia.id}>
                 {socialMedia.icon}
               </Link>
             ))}
@@ -24,7 +24,7 @@ const Hero = () => {
             <a className="hire-me" href="#contact">
               Hire Me
             </a>
-            <a className="resume" href="#">
+            <a className="resume" target="_blank" href="/John_Ossai_Resume.pdf">
               My Resume
             </a>
           </div>
@@ -37,7 +37,7 @@ const Hero = () => {
             </div>
             <h1 className="contents-text font-header">John Ossai</h1>
             <p className="contents-desc">
-              I am a frontend developer with 3 years of experience, building frontend applications
+              I am a frontend developer with 4 years of experience, building frontend applications
               using top rated frontend technologies. My core value lies around building applications
               with modern designs, and technologies and are highly optimal.
             </p>
