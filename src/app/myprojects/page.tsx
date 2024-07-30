@@ -1,63 +1,53 @@
 "use client";
-import React, { useState } from "react";
-import "./Project.scss";
-import { projects } from "@/constants";
-import Image from "next/image";
-import useFetchInfo from "../hook/fetchhook";
 import Link from "next/link";
+import React, { useState } from "react";
+import "../main.scss";
+import { projectsInfoDetails } from "@/constants";
+import Image from "next/image";
+import useFetchInfo from "@/components/hook/fetchhook";
+import Head from "next/head";
 
-const Projects = () => {
+const MyProjects = () => {
   const [openProjectInfo, setOpenProjectInfo] = useState(false);
   const { data, setTitleFn, title } = useFetchInfo("");
   return (
     <>
-      <div className="projects">
-        <div className="projects__wrapper">
-          <Link href="/myprojects" className="view-all">
-            View All
-          </Link>
-          <h1 className="projects-header font-header">Projects Highlights</h1>
-          <p className="projects-desc font-desc">These are some of my executed projects</p>
+      <Head>
+        <title>My Projects</title>
+      </Head>
+      <div className="my-projects">
+        <div className="my-projects__wrapper">
+          <div className="nav">
+            <Link href="/">Back</Link>
+            <Link href="/#contact">Contact Me</Link>
+          </div>
 
-          <div className="projects-container">
-            {projects.map((project) => (
-              <div key={project.id} className={`project ${project.reverse ? "reverse" : ""}`}>
-                <div className="image-container">
-                  {project.image}
-                  <div className="img-card"></div>
-                </div>
+          <div className="myprojects-main">
+            <h1 className="myprojects-main-header">Here is a Catalog of my Past Projects</h1>
 
-                <div className="project-content">
-                  <h1>{project.title}</h1>
-                  <p>{project.description}</p>
-                  <button
-                    onClick={() => {
-                      setTitleFn(project.title);
-                      setOpenProjectInfo(true);
-                    }}
-                  >
-                    View Project{" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="size-6"
+            <div className="myprojects-container">
+              <div className="myprojects-container-grid">
+                {projectsInfoDetails.map((project) => (
+                  <div className="myproject">
+                    {project.image}
+                    <h1>{project.title}</h1>
+                    <p>{project.description}</p>
+                    <button
+                      onClick={() => {
+                        setTitleFn(project.title);
+                        setOpenProjectInfo(true);
+                      }}
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                      />
-                    </svg>
-                  </button>
-                </div>
+                      View Project
+                    </button>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>
+
       {/* Project Information Card Display */}
       {openProjectInfo && (
         <div className="project-card">
@@ -149,4 +139,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default MyProjects;

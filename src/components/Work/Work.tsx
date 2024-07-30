@@ -6,7 +6,7 @@ import WorkBlur from "../../../public/blur/workBlur.svg";
 
 const Work = () => {
   return (
-    <div className="work">
+    <div className="work" id="contact">
       <Image src={WorkBlur} className="work-blur-eff" alt="Work Blur Effect" />
       <div className="work__wrapper">
         <h1 className="work-header font-header">Lets me work on your next project?</h1>

@@ -22,8 +22,11 @@ import Express from "../public/logos/skill-icons_expressjs-light.svg";
 
 // Projects Images
 import Veronicas from "../public/projectsImages/Veronicas.jpg";
-import Midwest from "../public/projectsImages/midwest.jpg";
+import Midwest from "../public/projectsImages/Midwest.jpg";
 import ScholarHub from "../public/projectsImages/ScholarHub.jpg";
+import FitVibe from "../public/projectsImages/fitvibe.png";
+import Portfolio from "../public/projectsImages/PortfolioJohn.png";
+import AppDesign from "../public/projectsImages/ImageOne.png";
 
 export const socialMediaLinks = [
   {
@@ -136,17 +139,87 @@ export const projectsInfoDetails = [
     description: "A Food Reservation  Website",
     technologiesUsed: ["Nextjs", "Sass", "Nodemailer"],
     designTheme: ["Light"],
-    href: "/",
+    href: "https://www.veronicas-kitchen.com/",
     reverse: true,
   },
   {
     id: 3,
     image: <Image className="project-image" src={ScholarHub} alt="scholarhub" />,
-    title: "Scholars Hub",
-    description: "A Research Delivery Website",
+    title: "Scholars Hub ",
+    description: "A Research Delivery Website - [ONGOING PROJECT]",
+    href: "https://scholar-six.vercel.app/",
+    reverse: false,
+    technologiesUsed: ["Nextjs", "TailwindCss", "Ant Design", "React Router"],
+    designTheme: ["Dark"],
+    sourceCodeHref: "/",
+  },
+  {
+    id: 3,
+    image: <Image className="project-image" src={Portfolio} alt="portfolio" />,
+    title: "My Portfolio V1",
+    description: "my portfolio version one",
+    href: "https://fitness-and-wellness.vercel.app/",
+    reverse: false,
+    technologiesUsed: ["Angular", "Tailwindcss"],
+    designTheme: ["Light"],
+    sourceCodeHref: "/",
+  },
+  {
+    id: 4,
+    image: <Image className="project-image" src={ScholarHub} alt="Macgroup Tech" />,
+    title: "Macgroup Technologies",
+    description: "A ReDesign and Development of the Macgroup Technologies",
+    href: "https://www.macgrouptech.com/",
+    reverse: false,
+    technologiesUsed: ["Nextjs", "Sass", "Nodemailer"],
+    designTheme: ["Light"],
+    sourceCodeHref: "/",
+  },
+
+  {
+    id: 5,
+    image: <Image className="project-image" src={ScholarHub} alt="heritage Hub" />,
+    title: "Heritage Hub",
+    description: "A Cuising Finder Website",
     href: "/",
     reverse: false,
     technologiesUsed: ["Nextjs", "Sass", "Nodemailer"],
+    designTheme: ["Light"],
+    sourceCodeHref: "/",
+  },
+
+  {
+    id: 3,
+    image: <Image className="project-image" src={FitVibe} alt="scholarhub" />,
+    title: "FitVibe Hub",
+    description: "Landing Page for a fitness and health website",
+    href: "https://fitness-and-wellness.vercel.app/",
+    reverse: false,
+    technologiesUsed: ["Nextjs", "Tailwindcss", "Nodemailer"],
+    designTheme: ["Light"],
+    sourceCodeHref: "/",
+  },
+
+  {
+    id: 3,
+    image: <Image className="project-image" src={ScholarHub} alt="scholarhub" />,
+    title: "Culinary Finder with API",
+    description: "A Culinary Finder with API",
+    href: "https://food-finder-ecru.vercel.app/",
+    reverse: false,
+    technologiesUsed: ["Axios", "TailwindCss"],
+    designTheme: ["Light"],
+    sourceCodeHref: "/",
+  },
+
+  {
+    id: 3,
+    image: <Image className="project-image" src={AppDesign} alt="Appdesign" />,
+    title: "Food Green",
+    description: "A Ui design for food delivery application",
+    href: "https://food-finder-ecru.vercel.app/",
+    reverse: false,
+    technologiesUsed: ["Figma", "CorelDraw"],
     designTheme: ["Light"],
     sourceCodeHref: "/",
   },

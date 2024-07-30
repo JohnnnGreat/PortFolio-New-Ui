@@ -37,9 +37,9 @@ const Hero = () => {
             </div>
             <h1 className="contents-text font-header">John Ossai</h1>
             <p className="contents-desc">
-              I am a frontend developer with roughly 3 years of experience building frontend
-              applications using top rated frontend technologies. My core value lies around building
-              applications with modern designs, and are highly optimal.
+              I am a frontend developer with 3 years of experience, building frontend applications
+              using top rated frontend technologies. My core value lies around building applications
+              with modern designs, and technologies and are highly optimal.
             </p>
           </div>
         </div>
