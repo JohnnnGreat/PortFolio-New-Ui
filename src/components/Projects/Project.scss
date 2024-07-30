@@ -134,10 +134,11 @@
   backdrop-filter: blur(10px);
   z-index: 23;
   padding: 2rem;
+  overflow: scroll;
   .close-card {
     font-family: "Syne", sans-serif;
     color: #b5b5b5;
-    position: absolute;
+    position: fixed;
     right: 3rem;
     font-size: 24px;
     font-weight: 600;

@@ -148,5 +148,6 @@ export const projectsInfoDetails = [
     reverse: false,
     technologiesUsed: ["Nextjs", "Sass", "Nodemailer"],
     designTheme: ["Light"],
+    sourceCodeHref: "/",
   },
 ];
