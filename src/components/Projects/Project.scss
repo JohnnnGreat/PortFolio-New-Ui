@@ -53,6 +53,10 @@
           right: -1rem;
           z-index: -1;
           border-radius: 10px;
+
+          @media (max-width: 567px) {
+            width: 100%;
+          }
         }
       }
 

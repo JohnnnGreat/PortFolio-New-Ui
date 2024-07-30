@@ -25,7 +25,7 @@ import Veronicas from "../public/projectsImages/Veronicas.jpg";
 import Midwest from "../public/projectsImages/Midwest.jpg";
 import ScholarHub from "../public/projectsImages/ScholarHub.jpg";
 import FitVibe from "../public/projectsImages/fitvibe.png";
-import Portfolio from "../public/projectsImages/PortfolioJohn.png";
+import Portfolio from "../public/projectsImages/TimPortfolio.jpg";
 import AppDesign from "../public/projectsImages/ImageOne.png";
 
 export const socialMediaLinks = [
@@ -128,8 +128,7 @@ export const projectsInfoDetails = [
     description: "A jamaican restaurant",
     technologiesUsed: ["Nextjs", "Sass", "Nodemailer"],
     designTheme: ["Light"],
-
-    href: "/",
+    href: "https://midwest-peach.vercel.app/",
     reverse: false,
   },
   {
@@ -156,9 +155,9 @@ export const projectsInfoDetails = [
   {
     id: 3,
     image: <Image className="project-image" src={Portfolio} alt="portfolio" />,
-    title: "My Portfolio V1",
-    description: "my portfolio version one",
-    href: "https://fitness-and-wellness.vercel.app/",
+    title: "Tim's Portfolio",
+    description: "A Portfolio Design and Development for A friend",
+    href: "https://timgabrielcodes.vercel.app/",
     reverse: false,
     technologiesUsed: ["Angular", "Tailwindcss"],
     designTheme: ["Light"],
