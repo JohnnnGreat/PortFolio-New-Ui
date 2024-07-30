@@ -79,25 +79,25 @@ export const researchProcess = [
     id: 1,
     title: "1. Research and Design",
     notes:
-      "Research is integral in every frontend project I embark on, this process and operation gets me acquainted with the necessary tools, and information needed to undertake this project, which includes, design system and theme for the project, existing website with similar functions. One the aforementioned process is done carefully, the next step to start the design phase with Figma. ",
+      "Research is integral to every frontend project I embark on. This process and operation acquaint me with the necessary tools and information needed to undertake this project, which includes the design system and theme for the project, as well as existing websites with similar functions. Once the aforementioned process is carefully done, the next step is to start the design phase with Figma.",
   },
   {
     id: 2,
     title: "2. Development and Testing",
     notes:
-      "While the research & design phase gets me with pre information needed, and the prototype of the website, the development and testing phase is, where I get my hands dirty. Using the right tools and technologies, I am being able to design a modern frontend application that emphasizes on user’s first. Next, is testing this is done to ensure that the website is actually how it is meant to be, regardless.",
+      "While the research and design phase provides me with the pre-information needed and the prototype of the website, the development and testing phase is where I get my hands dirty. Using the right tools and technologies, I am able to design a modern frontend application that emphasizes the user's needs. Next, testing is done to ensure that the website functions as intended, regardless of any issues.",
   },
   {
     id: 3,
     title: "3. Deployment and Delivery",
     notes:
-      "The Website is actually developed and working as expected, next is to deploy it, I choose to deploy most of my websites on Vercel, is blazingly fast and quick to set up. Once Deployed, the website is being delivered the client, the url of a working site, a documentation, and other information I fell is important for the client to have.",
+      "After the website is developed and working as expected, the next step is to deploy it. I choose to deploy most of my websites on Vercel, as it is blazingly fast and quick to set up. Once deployed, the website is delivered to the client, along with the URL of the working site, a documentation, and any other information I feel is important for the client to have.",
   },
   {
     id: 4,
     title: "4. Periodic Maintenance & Update",
     notes:
-      "Once deployed and delivered, I maintain periodic check on the website functions, to ensure every components are still running as they are meant to run. Updates on the other hand, are usually triggered by the client, most especially when there is call to an update on the content of website, of which I am always happy to do.",
+      "Once deployed and delivered, I maintain periodic checks on the website's functions to ensure that every component is still running as intended. Updates, on the other hand, are usually triggered by the client, most especially when there is a need to update the website's content, which I am always happy to do.",
   },
 ];
 

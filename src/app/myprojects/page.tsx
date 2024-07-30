@@ -12,9 +12,8 @@ const MyProjects = () => {
   const { data, setTitleFn, title } = useFetchInfo("");
   return (
     <>
-      <Head>
-        <title>My Projects</title>
-      </Head>
+      <title>My Projects</title>
+
       <div className="my-projects">
         <div className="my-projects__wrapper">
           <div className="nav">
