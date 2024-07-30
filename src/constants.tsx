@@ -22,7 +22,7 @@ import Express from "../public/logos/skill-icons_expressjs-light.svg";
 
 // Projects Images
 import Veronicas from "../public/projectsImages/Veronicas.jpg";
-import Midwest from "../public/projectsImages/Midwest.jpg";
+import Midwest from "../public/projectsImages/midwest.jpg";
 import ScholarHub from "../public/projectsImages/ScholarHub.jpg";
 import FitVibe from "../public/projectsImages/fitvibe.png";
 import Portfolio from "../public/projectsImages/TimPortfolio.jpg";
@@ -216,6 +216,17 @@ export const projectsInfoDetails = [
     image: <Image className="project-image" src={AppDesign} alt="Appdesign" />,
     title: "Food Green",
     description: "A Ui design for food delivery application",
+    href: "https://food-finder-ecru.vercel.app/",
+    reverse: false,
+    technologiesUsed: ["Figma", "CorelDraw"],
+    designTheme: ["Light"],
+    sourceCodeHref: "/",
+  },
+  {
+    id: 3,
+    image: <Image className="project-image" src={AppDesign} alt="House of Max" />,
+    title: "House of Max",
+    description: "",
     href: "https://food-finder-ecru.vercel.app/",
     reverse: false,
     technologiesUsed: ["Figma", "CorelDraw"],
