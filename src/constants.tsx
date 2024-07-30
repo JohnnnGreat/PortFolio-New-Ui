@@ -27,6 +27,9 @@ import ScholarHub from "../public/projectsImages/ScholarHub.jpg";
 import FitVibe from "../public/projectsImages/fitvibe.png";
 import Portfolio from "../public/projectsImages/TimPortfolio.jpg";
 import AppDesign from "../public/projectsImages/ImageOne.png";
+import Hom from "../public/projectsImages/hom.jpg";
+import Heritage from "../public/projectsImages/Heritage.png";
+import Macgroup from "../public/projectsImages/Macgroup.png";
 
 export const socialMediaLinks = [
   {
@@ -153,7 +156,7 @@ export const projectsInfoDetails = [
     sourceCodeHref: "/",
   },
   {
-    id: 3,
+    id: 4,
     image: <Image className="project-image" src={Portfolio} alt="portfolio" />,
     title: "Tim's Portfolio",
     description: "A Portfolio Design and Development for A friend",
@@ -164,8 +167,8 @@ export const projectsInfoDetails = [
     sourceCodeHref: "/",
   },
   {
-    id: 4,
-    image: <Image className="project-image" src={ScholarHub} alt="Macgroup Tech" />,
+    id: 5,
+    image: <Image className="project-image" src={Macgroup} alt="Macgroup Tech" />,
     title: "Macgroup Technologies",
     description: "A ReDesign and Development of the Macgroup Technologies",
     href: "https://www.macgrouptech.com/",
@@ -177,12 +180,12 @@ export const projectsInfoDetails = [
 
   {
     id: 5,
-    image: <Image className="project-image" src={ScholarHub} alt="heritage Hub" />,
+    image: <Image className="project-image" src={Heritage} alt="heritage Hub" />,
     title: "Heritage Hub",
     description: "A Cuising Finder Website",
-    href: "/",
+    href: "https://soulfood-sepia.vercel.app/",
     reverse: false,
-    technologiesUsed: ["Nextjs", "Sass", "Nodemailer"],
+    technologiesUsed: ["Nextjs", "Sass", "Nodemailer", "MongoDb", "Express Js"],
     designTheme: ["Light"],
     sourceCodeHref: "/",
   },
@@ -216,7 +219,7 @@ export const projectsInfoDetails = [
     image: <Image className="project-image" src={AppDesign} alt="Appdesign" />,
     title: "Food Green",
     description: "A Ui design for food delivery application",
-    href: "https://food-finder-ecru.vercel.app/",
+    href: "",
     reverse: false,
     technologiesUsed: ["Figma", "CorelDraw"],
     designTheme: ["Light"],
@@ -224,10 +227,10 @@ export const projectsInfoDetails = [
   },
   {
     id: 3,
-    image: <Image className="project-image" src={AppDesign} alt="House of Max" />,
+    image: <Image className="project-image" src={Hom} alt="House of Max" />,
     title: "House of Max",
     description: "",
-    href: "https://food-finder-ecru.vercel.app/",
+    href: "https://www.houseofmax.org/",
     reverse: false,
     technologiesUsed: ["Figma", "CorelDraw"],
     designTheme: ["Light"],
