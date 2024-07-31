@@ -1,7 +1,7 @@
 .footer {
   overflow: hidden;
   padding: 5rem 1rem;
-  @media (max-width: 567px) {
+  @media (max-width: 800px) {
     padding: 3rem 1rem;
   }
   &__wrapper {
@@ -16,6 +16,10 @@
     position: relative;
     overflow: hidden;
     background-color: #56565627;
+
+    @media (max-width: 800px) {
+      padding: 1.7rem;
+    }
     .container {
       display: flex;
       align-items: center;
@@ -75,7 +79,7 @@
   top: 0;
   left: -2rem;
   z-index: 2;
-  @media (max-width: 567px) {
+  @media (max-width: 590px) {
     left: -60%;
   }
 }
@@ -86,7 +90,7 @@
   right: -2rem;
   z-index: 2;
 
-  @media (max-width: 567px) {
+  @media (max-width: 590px) {
     right: -60%;
   }
 }

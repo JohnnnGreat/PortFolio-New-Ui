@@ -2,7 +2,7 @@
   padding: 5rem 1rem;
   overflow: hidden;
   position: relative;
-  @media (max-width: 567px) {
+  @media (max-width: 800px) {
     padding: 3rem 1rem;
   }
   &__wrapper {
@@ -47,6 +47,14 @@
           grid-template-columns: repeat(2, 1fr);
           max-width: 100% !important;
         }
+
+        @media (max-width: 800px) and (min-width: 567px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: 1000px) and (min-width: 800px) {
+          grid-template-columns: repeat(4, 1fr);
+        }
         .tech-card {
           width: 180px;
           height: 130px;
@@ -71,7 +79,7 @@
               color: #cececee5;
             }
           }
-          @media (max-width: 567px) {
+          @media (max-width: 1000px) {
             height: 120px;
             width: 100%;
             img {

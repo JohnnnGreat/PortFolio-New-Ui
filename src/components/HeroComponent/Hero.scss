@@ -42,6 +42,7 @@ $primary_color: #8cf506;
             width: 35px;
             height: 35px;
           }
+
           &:nth-child(1) {
             img {
               width: 10px;
@@ -101,7 +102,7 @@ $primary_color: #8cf506;
     .contents {
       display: flex;
       justify-content: center;
-      margin-top: 1.6rem;
+      margin-top: 1.8rem;
       &__wrapper {
         display: flex;
         flex-direction: column;
@@ -115,6 +116,10 @@ $primary_color: #8cf506;
 
           @media (max-width: 567px) {
             font-size: 36px;
+          }
+
+          @media (max-width: 1000px) and (min-width: 567px) {
+            font-size: 45px;
           }
         }
         .contents-avater {
@@ -136,6 +141,11 @@ $primary_color: #8cf506;
             font-size: 0.9rem;
             max-width: 100%;
           }
+
+          @media (max-width: 1000px) and (min-width: 567px) {
+            font-size: 1rem;
+            max-width: 100%;
+          }
         }
       }
     }
@@ -149,7 +159,7 @@ $primary_color: #8cf506;
       margin-top: 3.5rem;
       justify-content: center;
 
-      @media (max-width: 567px) {
+      @media (max-width: 700px) {
         flex-direction: column;
       }
 
@@ -158,9 +168,14 @@ $primary_color: #8cf506;
           font-size: 36px;
           color: #fff;
           font-weight: 600;
+          line-height: 1;
 
           @media (max-width: 567px) {
-            font-size: 24px;
+            font-size: 28px;
+          }
+
+          @media (max-width: 1000px) and (min-width: 567px) {
+            font-size: 32px;
           }
         }
 
@@ -169,7 +184,7 @@ $primary_color: #8cf506;
           font-size: 1rem;
           max-width: 300px;
 
-          @media (max-width: 567px) {
+          @media (max-width: 1000px) {
             font-size: 1rem;
           }
         }
@@ -182,15 +197,18 @@ $primary_color: #8cf506;
         border: 2px solid #ffffff25;
         border-radius: 10px;
         padding-right: 0.8rem;
-        @media (max-width: 567px) {
+        @media (max-width: 800px) {
           flex-direction: column;
           padding-right: 0;
+        }
+
+        @media (max-width: 800px) and (min-width: 567px) {
         }
         img {
           width: 350px;
           border-radius: 8px;
 
-          @media (max-width: 567px) {
+          @media (max-width: 700px) {
             width: 100%;
           }
         }
@@ -206,7 +224,7 @@ $primary_color: #8cf506;
             color: #ffffffe5;
           }
 
-          @media (max-width: 567px) {
+          @media (max-width: 800px) {
             flex-direction: row;
             margin-left: 1rem;
             margin-bottom: 1rem;
