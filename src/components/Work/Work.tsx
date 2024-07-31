@@ -12,14 +12,20 @@ const Work = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    const formBody = { name, email, message };
 
-    const response = await fetch("/api/message", {
-      method: "POST",
-      body: JSON.stringify(formBody),
-    }).then((res) => {
-      alert("Message Sent");
-    });
+    if (!email || !name || !message || !email.includes("@")) {
+      alert("Message cant be sent, check your form or email");
+      return;
+    } else {
+      const formBody = { name, email, message };
+
+      const response = await fetch("/api/message", {
+        method: "POST",
+        body: JSON.stringify(formBody),
+      }).then((res) => {
+        alert("Message Sent");
+      });
+    }
   };
 
   return (
