@@ -5,7 +5,7 @@ import Link from "next/link";
 import Avatar from "../../../public/svgs/profile_illus.svg";
 import Image from "next/image";
 import HeroBlur from "../../../public/blur/HeroBlur.svg";
-import ScholarHub from "../../../public/projectsImages/ScholarHub.jpg";
+import Jobr from "../../../public/projectsImages/newI.jpg";
 
 const Hero = () => {
   return (
@@ -50,8 +50,8 @@ const Hero = () => {
             <p className="font-desc">Have a look first of my ongoing project</p>
           </div>
           <div className="pinned__second">
-            <Image src={ScholarHub} alt="Pinned project" />
-            <Link className="font-desc" href="/">
+            <Image src={Jobr} alt="Pinned project" />
+            <Link className="font-desc" href="https://jobr.vercel.app/" target="_blank">
               View Site
               <svg
                 xmlns="http://www.w3.org/2000/svg"
