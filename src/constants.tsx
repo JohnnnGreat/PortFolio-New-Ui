@@ -35,6 +35,7 @@ import Ed from "../public/projectsImages/ed.jpg";
 import Marketing from "../public/projectsImages/marketing.jpg";
 import Culinary from "../public/projectsImages/culinary.jpg";
 import Saveo from "../public/projectsImages/Saveo.jpg";
+import Jobr from "../public/projectsImages/newl.jpg";
 
 export const socialMediaLinks = [
   {
@@ -131,6 +132,17 @@ export const projects = [
 export const projectsInfoDetails = [
   {
     id: 1,
+    image: <Image className="project-image" src={Jobr} alt="midwest" />,
+    title: "Jobr",
+    description: "A Full Stack Job Finder Application",
+    technologiesUsed: ["React", "Vite", "Express"],
+    designTheme: ["Light"],
+    href: "https://jobr.vercel.app/",
+    reverse: false,
+    sourceCodeHref: "https://github.com/JohnnnGreat/Jobr-Online-Job-Portal.git",
+  },
+  {
+    id: 15,
     image: <Image className="project-image" src={Midwest} alt="midwest" />,
     title: "Midwest Jack and Greens",
     description: "A jamaican restaurant",

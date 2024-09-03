@@ -5,7 +5,7 @@ import Link from "next/link";
 import Avatar from "../../../public/svgs/profile_illus.svg";
 import Image from "next/image";
 import HeroBlur from "../../../public/blur/HeroBlur.svg";
-import Jobr from "../../../public/projectsImages/newI.jpg";
+import Jobr from "../../../public/projectsImages/newl.jpg";
 
 const Hero = () => {
   return (
