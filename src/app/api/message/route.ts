@@ -2,22 +2,22 @@ import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export const POST = async (req: NextRequest, res: NextResponse) => {
-  const body = await req.json();
-  const { email, name, message } = body;
-  try {
-    const transporter = nodemailer.createTransport({
-      service: "Gmail", // You can use other email services
-      auth: {
-        user: "johnossai20@gmail.com",
-        pass: "kblgyogjwalbiwja",
-      },
-    });
+   const body = await req.json();
+   const { email, name, message } = body;
+   try {
+      const transporter = nodemailer.createTransport({
+         service: "Gmail", // You can use other email services
+         auth: {
+            user: "scholarhubbot@gmail.com", // Your email address
+            pass: "vqrrtrkcnmdicsht", // Your email password or app-specific password
+         },
+      });
 
-    const mailOptions = {
-      from: "email",
-      to: "johnossai20@gmail.com",
-      subject: "Resource Request Notification",
-      html: `<!DOCTYPE html>
+      const mailOptions = {
+         from: "email",
+         to: "johnossai20@gmail.com",
+         subject: "New Message from your portfolio",
+         html: `<!DOCTYPE html>
       <html lang="en">
       
       <head>
@@ -28,7 +28,7 @@ export const POST = async (req: NextRequest, res: NextResponse) => {
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
           <style>
               body {
-                  font-family: 'Poppins', sans-serif;
+                  font-family: 'Poppins', sans-serif !important;
                   background-color: #f9f9f9;
                   margin: 0;
                   padding: 0;
@@ -89,13 +89,13 @@ export const POST = async (req: NextRequest, res: NextResponse) => {
       </body>
       
       </html>`,
-    };
+      };
 
-    const res = await transporter.sendMail(mailOptions);
-    console.log(res, "res");
-    return NextResponse.json({ success: true, message: "Request Sent Successfully" });
-  } catch (error) {
-    console.log(error);
-    return NextResponse.json(error);
-  }
+      const res = await transporter.sendMail(mailOptions);
+      console.log(res, "res");
+      return NextResponse.json({ success: true, message: "Request Sent Successfully" });
+   } catch (error) {
+      console.log(error);
+      return NextResponse.json(error);
+   }
 };
