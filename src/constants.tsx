@@ -287,7 +287,7 @@ export const projectsInfoDetails = [
          />
       ),
       title: "The Diplomatic Digital World",
-      description: "A Website for a codind training center",
+      description: "A Website for a coding training center",
       technologiesUsed: ["React", "Next", "TailwindCss"],
       designTheme: ["Light"],
       href: "https://www.diplomatsdigitalworld.com.ng/",
@@ -311,23 +311,7 @@ export const projectsInfoDetails = [
       reverse: false,
       sourceCodeHref: "/",
    },
-   {
-      id: 16,
-      image: (
-         <Image
-            className="project-image"
-            src={Temu}
-            alt="temu"
-         />
-      ),
-      title: "Temu Immigration",
-      description: "An Immigration Website",
-      technologiesUsed: ["React", "Next", "TailwindCss"],
-      designTheme: ["Light"],
-      href: "https://jobr.vercel.app/",
-      reverse: false,
-      sourceCodeHref: "/",
-   },
+
    {
       id: 1,
       image: (
