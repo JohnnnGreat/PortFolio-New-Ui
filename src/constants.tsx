@@ -287,7 +287,7 @@ export const projectsInfoDetails = [
          />
       ),
       title: "The Diplomatic Digital World",
-      description: "An Immigration Website",
+      description: "A Website for a codind training center",
       technologiesUsed: ["React", "Next", "TailwindCss"],
       designTheme: ["Light"],
       href: "https://www.diplomatsdigitalworld.com.ng/",
