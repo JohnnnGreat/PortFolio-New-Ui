@@ -38,6 +38,8 @@ import Saveo from "../public/projectsImages/Saveo.jpg";
 import Jobr from "../public/projectsImages/newl.jpg";
 import Temu from "../public/projectsImages/temu.png";
 import Diplomatic from "../public/projectsImages/diplo.png";
+import AICU from "../public/projectsImages/AICU.jpeg";
+import EDUGATE from "../public/projectsImages/Edugate.jpg";
 
 export const socialMediaLinks = [
    {
@@ -247,36 +249,76 @@ export const projects = [
       sourceCodeHref: "/",
    },
    {
-      id: 2,
+      id: 18,
       image: (
          <Image
             className="project-image"
-            src={Veronicas}
-            alt="veronicas"
+            src={AICU}
+            alt="aicu"
          />
       ),
-      title: "Veronicas Kitchen",
-      description: "A Food Reservation  Website",
-      href: "/",
+      title: "AICU | American International Christian University",
+      description: "AICU envisions a teaching team that is focused on serving the nations. We desire to develop others who will be servants to the nations.",
+      technologiesUsed: ["React", "Next", "TailwindCss"],
+      designTheme: ["Light"],
+      href: "https://www.aicuedu.org/",
       reverse: true,
+      sourceCodeHref: "/",
    },
    {
-      id: 3,
+      id: 19,
       image: (
          <Image
             className="project-image"
-            src={ScholarHub}
-            alt="scholarhub"
+            src={EDUGATE}
+            alt="edugate"
          />
       ),
-      title: "Scholars Hub",
-      description: "A Research Delivery Website",
-      href: "/",
+      title: "Edugate",
+      description: "An Experimental University Portal (Incomplete)",
+      technologiesUsed: ["React", "Next", "TailwindCss"],
+      designTheme: ["Light"],
+      href: "https://github.com/JohnnnGreat/Edugate-Portal",
       reverse: false,
+      sourceCodeHref: "/",
    },
 ];
 
 export const projectsInfoDetails = [
+   {
+      id: 18,
+      image: (
+         <Image
+            className="project-image"
+            src={AICU}
+            alt="aicu"
+         />
+      ),
+      title: "AICU | American International Christian University",
+      description: "AICU envisions a teaching team that is focused on serving the nations. We desire to develop others who will be servants to the nations.",
+      technologiesUsed: ["React", "Next", "TailwindCss"],
+      designTheme: ["Light"],
+      href: "https://www.aicuedu.org/",
+      reverse: false,
+      sourceCodeHref: "/",
+   },
+   {
+      id: 19,
+      image: (
+         <Image
+            className="project-image"
+            src={EDUGATE}
+            alt="edugate"
+         />
+      ),
+      title: "Edugate",
+      description: "An Experimental University Portal (Incomplete)",
+      technologiesUsed: ["React", "Next", "TailwindCss"],
+      designTheme: ["Light"],
+      href: "https://github.com/JohnnnGreat/Edugate-Portal",
+      reverse: false,
+      sourceCodeHref: "/",
+   },
    {
       id: 17,
       image: (

@@ -257,3 +257,25 @@ $primary_color: #8cf506;
 .font-desc {
    font-family: "Poppins", sans-serif;
 }
+
+.hire-me-alt {
+   border: 2px solid #565656;
+   padding: 0.65rem 1.6rem;
+   color: #fff;
+   display: inline-block;
+   background-color: #ffffff1a;
+   border-radius: 10px;
+   height: max-content;
+   transition: 300ms ease;
+   margin-top: 1rem;
+   font-family: "Syne", sans-serif;
+   &:hover {
+      border: 2px solid #ffffff4b;
+      background-color: transparent;
+      transition: 300ms ease;
+   }
+
+   @media (max-width: 567px) {
+      display: none;
+   }
+}
